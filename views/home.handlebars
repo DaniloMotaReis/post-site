@@ -1,0 +1,29 @@
+<div class="card text-center">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="true" href="http://localhost:8081/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8081/cad">Cadastrar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Alterar</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <h1>Lista de Posts: </h1>
+        {{#each posts}}
+        <div class="posts">
+            <h1>id: {{id}}</h1>
+            <h2>Titulo: {{titulo}}</h2>
+            <p>Conteudo: {{conteudo}}</p>
+            <p>Data: {{createdAt}}</p>
+            <a href="/deletar/{{id}}"><button class="btn btn-danger">Deletar</button></a>
+            <a href="/alterar/{{id}}"><button class="btn btn-dark">Alterar</button></a>
+            <hr>
+        </div>
+        {{/each}}
+    </div>
+</div>

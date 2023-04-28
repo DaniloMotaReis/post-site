@@ -1,0 +1,26 @@
+<div class="card text-center">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="true" href="http://localhost:8081/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active"  href="http://localhost:8081/cad">Cadastrar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Alterar</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <form action="/add" method="post">
+            <h1>Cadastro de Postagens</h1>
+            <p>Titulo: </p>
+            <input type="text" name="titulo">
+            <p>Conteúdo: </p>
+            <textarea name="conteudo"></textarea><br><br>
+            <button type="submit" class="btn btn-dark">Cadastrar Postagem</button>
+            <hr>
+        </form>
+    </div>
+</div>

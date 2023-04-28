@@ -1,0 +1,16 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: table;
+    vertical-align: middle;
+}
+
+.posts {
+    vertical-align: middle;
+    background: rgb(67, 111, 255);
+    color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px 50px 50px 50px;
+}
